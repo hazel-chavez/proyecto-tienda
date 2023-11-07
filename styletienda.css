@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+.titulo p{
+    font-family: 'Satisfy', cursive;
+    font-size: 28px;
+}
+.section-usuario{
+  cursor: pointer;
+}
+.outfit{
+    width: 20%;
+    height: 30px;
+    border-color: 1px solid #0a0a0a;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 2px 2px 2px black; 
+    z-index: 1;
+    border:1px solid #000;
+    cursor: pointer;
+    
+}
+.outfit p{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    
+    
+}
+.outfit::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background-color: #dc143c;
+    z-index: -1;
+    transition:  0.3s ease-in-out;
+}
+.outfit:hover:after {
+    width: 100%;
+}
+.ver_mas{
+    width: 150px;
+    height: 68px;
+    
+}
+.cta {
+    display: flex;
+    align-items: center;
+    color:rgb(5, 5, 5);
+    background: none;
+    border: none;
+    padding: 18px 18px;
+    position: relative;
+}
+.cta:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+    translateY(calc(100% + 4 px));
+    width: 30px;
+    height: 30px;
+    background: #dc143c;
+    border-radius: 50px;
+    transition:transform .25s .25s cubic-bezier(0,0.5,2), width .25s cubic-bezier(0,0,.5,2);
+    z-index: -1;
+}
+.cta:hover::before{
+   
+    width: 100%;/*abarca el 100% del boton*/
+    transform: translateY(-40%)
+    translateX(-18px);
+    transition: transform .25s cubic-bezier(0,0,.5,2), width .25s .25s cubic-bezier(0,0,.5,2);
+}
+.cta i{
+    margin-left: 5px;
+    transition: transform .25s .4s cubic-bezier(0,0.5,2);
+}
+.cta:hover i{
+    transform: translateX(3px);
+
+}
+ a:link{
+    text-decoration: none;
+    color: #000;
+}
+.footer{
+    background-color: #000;
+}
+.colum1{
+    border-right: 1px solid #fff;
+}
+.colum1 p{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.colum1 img{
+    font-size: 13px;
+}
+.colum2{
+    border-right: 1px solid #fff;
+}
+.colum2 p{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info span{
+    font-size: 13px;
+}
+.colum3{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.button-promo button{
+    border: none;
+    padding: 10px;
+    background-color: #dc143c;
+}
+.button-promo button:hover{
+    background-color: #f54f70;
+}
+
+  @media screen and (max-width: 767px){
+    .colum2{
+        border-right: none;
+        
+    }
+  }
+ 
