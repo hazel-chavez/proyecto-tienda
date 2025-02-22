@@ -12,18 +12,7 @@
 .section-usuario{
   cursor: pointer;
 }
-.outfit{
-    width: 20%;
-    height: 30px;
-    border-color: 1px solid #0a0a0a;
-    position: relative;
-    overflow: hidden;
-    text-shadow: 2px 2px 2px black; 
-    z-index: 1;
-    border:1px solid #000;
-    cursor: pointer;
-    
-}
+
 .outfit p{
     font-family: sans-serif;
     text-transform: uppercase;
@@ -51,7 +40,7 @@
     
 }
 .cta {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     color:rgb(5, 5, 5);
     background: none;
@@ -63,7 +52,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-40%)
     translateY(calc(100% + 4 px));
     width: 30px;
     height: 30px;
@@ -76,7 +65,7 @@
    
     width: 100%;/*abarca el 100% del boton*/
     transform: translateY(-40%)
-    translateX(-18px);
+    translateX(-20px);
     transition: transform .25s cubic-bezier(0,0,.5,2), width .25s .25s cubic-bezier(0,0,.5,2);
 }
 .cta i{
@@ -84,7 +73,7 @@
     transition: transform .25s .4s cubic-bezier(0,0.5,2);
 }
 .cta:hover i{
-    transform: translateX(3px);
+    transform: translateX(25px);
 
 }
  a:link{
@@ -113,6 +102,10 @@
 }
 .info span{
     font-size: 13px;
+}
+.social-media i{
+    text-decoration: none;
+    color: #fff;
 }
 .colum3{
     font-size: 18px;
