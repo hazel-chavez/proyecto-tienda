@@ -14,7 +14,7 @@
 }
 
 .outfit p {
-	font-family: Atkinson Hyperlegible Next", serif";
+	font-family: sans-serif;
 	text-transform: uppercase;
 }
 .outfit::after {
