@@ -17,21 +17,6 @@
 	font-family: sans-serif;
 	text-transform: uppercase;
 }
-.outfit::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 0;
-	height: 100%;
-	background-color: #dc143c;
-	z-index: -1;
-	transition: 0.3s ease-in-out;
-}
-.outfit:hover:after {
-	width: 100%;
-}
 .ver_mas {
 	width: 150px;
 	height: 68px;
